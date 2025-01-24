@@ -4,8 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body>
+    <header><div class="titulo"><h1>TABLERO KANBAN</h1></div></header>
+    <main class="contenedor">
+        <section class="item"><h2>Pendiente</h2><div><div id="tPendientes"></div><button class="btnAgregar" id="pendiente"><a href="#divFormPendiente">Agregar tarea</a></button></div></section>
+        <section class="item"><h2>En progreso</h2><div><div id="tProgreso"></div><button class="btnAgregar" id="progreso"><a href="#divFormProgreso">Agregar tarea</a></button></div></section>
+        <section class="item"><h2>Completadas</h2><div><div id="tCompletadas"></div><button class="btnAgregar" id="completada"><a href="#divFormCompletada">Agregar tarea</a></button></div></section>
+    </main>
+
+    <div class="forms">
+        <div id="divFormPendiente">
+            <h2>Agregar tareas pendientes</h2>
+            <br><br>
+            <form id="formPendiente">
+                <label for="tituloP" >Titulo: </label>
+                <input required type="text" id="tituloP" name="tituloP">
+                <br><br>
+                <label for="descripcionP">Descripcion: </label>
+                <input required type="text" id="descripcionP" name="descripcionP">
+                <br><br>
+                <label for="imagenP"></label>
+                <input type="file" id="imagenP" name="imagenP" placeholder="Imagen">
+                <br><br>
+                <label for="fechaInicioP">Fecha de inicio: </label>
+                <input required type="date" id="fechaInicioP" name="fechaInicioP">
+                <br><br>
+                <label for="fechaFinalizacionP">Fecha de finalizacion: </label>
+                <input required type="date" id="fechaFinalizacionP" name="fechaFinalizacionP">
+                <br><br>
+                <button class="btnAgregar">Agregar</button>
+            </form>
+        </div>
+
+
+        <div id="divFormProgreso">
+            <h2>Agregar tareas en progreso</h2>
+            <br><br>
+            <form id="formProgreso">
+                <label for="titulo">Titulo: </label>
+                <input required type="text" id="tituloPr" name="titulo">
+                <br><br>
+                <label for="descripcion">Descripcion: </label>
+                <input required type="text" id="descripcionPr" name="descripcion">
+                <br><br>
+                <label for="imagen"></label>
+                <input type="file" id="imagenPr" name="imagen" placeholder="Imagen">
+                <br><br>
+                <label for="fechaInicio">Fecha de inicio: </label>
+                <input required type="date" id="fechaInicioPr" name="fechaInicio">
+                <br><br>
+                <label for="fechaFinalizacion">Fecha de finalizacion: </label>
+                <input required type="date" id="fechaFinalizacionPr" name="fechaFinalizacion">
+                <br><br>
+                <button class="btnAgregar">Agregar</button>
+            </form>
+        </div>
+    
+        <div id="divFormCompletada">
+            <h2>Agregar completadas</h2>
+            <br><br>
+            <form id="formCompletada">
+                <label for="titulo">Titulo: </label>
+                <input required type="text" id="tituloC" name="titulo">
+                <br><br>
+                <label for="descripcion">Descripcion: </label>
+                <input required type="text" id="descripcionC" name="descripcion">
+                <br><br>
+                <label for="imagen"></label>
+                <input type="file" id="imagenC" name="imagen" placeholder="Imagen">
+                <br><br>
+                <label for="fechaInicio">Fecha de inicio: </label>
+                <input required type="date" id="fechaInicioC" name="fechaInicio">
+                <br><br>
+                <label for="fechaFinalizacion">Fecha de finalizacion: </label>
+                <input required type="date" id="fechaFinalizacionC" name="fechaFinalizacion">
+                <br><br>
+                <button class="btnAgregar">Agregar</button>
+            </form>
+        </div>
+    </div>
+
     
 </body>
+<script src="app.js"></script>
 </html>
