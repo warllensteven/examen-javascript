@@ -8,7 +8,9 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header><div class="titulo"><h1>TABLERO KANBAN</h1></div></header>
+    <header><div class="titulo" id="titulo"><h1>TABLERO KANBAN</h1></div>
+        <div class="titulo"><button class="btnInicio"><a href="#divFormIniciar">Iniciar Sesion</a></button></div>
+        <div class="titulo"><button class="btnInicio"><a href="#divFormRegistrar">Registrar</a></button></div></header>
     <main class="contenedor">
         <section class="item"><h2>Pendiente</h2><div><div id="tPendientes"></div><button class="btnAgregar" id="pendiente"><a href="#divFormPendiente">Agregar tarea</a></button></div></section>
         <section class="item"><h2>En progreso</h2><div><div id="tProgreso"></div><button class="btnAgregar" id="progreso"><a href="#divFormProgreso">Agregar tarea</a></button></div></section>
@@ -85,9 +87,39 @@
                 <button class="btnAgregar">Agregar</button>
             </form>
         </div>
-    </div>
 
-    
+        <div id="divFormIniciar">
+            <h2>Iniciarrr Sesion</h2>
+            <br><br>
+            <form id="formIniciar">
+                <label for="usuarioI">Usuario: </label>
+                <input required type="text" id="usuarioI" name="usuarioI">
+                <br><br>
+                <label for="contraseñaI">Contraseña: </label>
+                <input required type="password" id="contraseñaI" name="contraseñaI">
+                <br><br>
+                <button class="btnIniciar"><a href="#titulo">Iniciar Sesion</a></button>
+            </form>
+        </div>
+
+        <div id="divFormRegistrar">
+            <h2>Registrar</h2>
+            <br><br>
+            <form id="formRegistrar">
+                <label for="usuarioR">Usuario: </label>
+                <input required type="text" id="usuarioR" name="usuarioR">
+                <br><br>
+                <label for="contraseñaR">Contraseña: </label>
+                <input required type="password" id="contraseñaR" name="contraseñaR">
+                <br><br>
+                <button class="btnRegistrar"><a href="#titulo">Registrar</a></button>
+            </form>
+        </div>
+
+
+    </div>
+</div>
+
 </body>
 <script src="app.js"></script>
 </html>

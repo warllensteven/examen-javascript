@@ -1,136 +1,23 @@
 {
   "usuarios": [
     {
-      "usuario": "",
+      "usuario": "warlen",
+      "contraseña": "1234",
       "pendientes": [],
       "progreso": [],
-      "completadas": []
+      "completadas": [],
+      "id": 1
+    },
+    {
+      "usuario": "kevin",
+      "contraseña": "1234",
+      "pendientes": [],
+      "progreso": [],
+      "completadas": [],
+      "id": 2
     }
   ],
-  "tareasPendientes": [
-    {
-      "id": 1,
-      "titulo": "1",
-      "descripcion": "Primer tarea agregada",
-      "img": "",
-      "fechaInicio": "2025-01-24",
-      "fechaFinal": "2025-01-25"
-    },
-    {
-      "id": 2,
-      "titulo": "tarea 2",
-      "descripcion": "tarea de pruebas",
-      "img": "",
-      "fechaInicio": "2025-01-22",
-      "fechaFinal": "2025-01-24"
-    },
-    {
-      "id": 3,
-      "titulo": "3",
-      "descripcion": "edvwr",
-      "img": "C:\\fakepath\\Captura desde 2025-01-20 06-56-48.png",
-      "fechaInicio": "2025-01-24",
-      "fechaFinal": "2025-01-25"
-    },
-    {
-      "id": 4,
-      "titulo": "4",
-      "descripcion": "siu",
-      "img": "C:\\fakepath\\Captura desde 2025-01-20 06-56-48.png",
-      "fechaInicio": "2025-01-24",
-      "fechaFinal": "2025-01-31"
-    },
-    {
-      "id": 5,
-      "titulo": "5",
-      "descripcion": "asfe",
-      "img": "",
-      "fechaInicio": "2025-01-24",
-      "fechaFinal": "2025-01-25"
-    },
-    {
-      "id": 6,
-      "titulo": "6",
-      "descripcion": "qefvr",
-      "img": "",
-      "fechaInicio": "2025-01-24",
-      "fechaFinal": "2025-01-26"
-    },
-    {
-      "id": 7,
-      "titulo": "7",
-      "descripcion": "efvrd",
-      "img": "",
-      "fechaInicio": "2025-01-24",
-      "fechaFinal": "2025-01-31"
-    },
-    {
-      "id": 8,
-      "titulo": "8",
-      "descripcion": "ewver",
-      "img": "",
-      "fechaInicio": "2025-01-25",
-      "fechaFinal": "2025-01-26"
-    },
-    {
-      "id": 9,
-      "titulo": "10",
-      "descripcion": "refgvf",
-      "img": "",
-      "fechaInicio": "2025-01-25",
-      "fechaFinal": "2025-01-31"
-    },
-    {
-      "id": 10,
-      "titulo": "11",
-      "descripcion": "fegbt",
-      "img": "",
-      "fechaInicio": "2025-01-25",
-      "fechaFinal": "2025-01-26"
-    },
-    {
-      "id": 11,
-      "titulo": "12",
-      "descripcion": "vfevtr",
-      "img": "",
-      "fechaInicio": "2025-01-24",
-      "fechaFinal": "2025-01-26"
-    },
-    {
-      "id": 12,
-      "titulo": "14",
-      "descripcion": "revrtf",
-      "img": "",
-      "fechaInicio": "2025-01-17",
-      "fechaFinal": "2025-01-22"
-    },
-    {
-      "id": 13,
-      "titulo": "15",
-      "descripcion": "wevdget",
-      "img": "",
-      "fechaInicio": "2025-01-24",
-      "fechaFinal": "2025-01-25"
-    }
-  ],
-  "tareasProgreso": [
-    {
-      "id": 1,
-      "titulo": "1 progreso",
-      "descripcion": "dsvrer",
-      "img": "C:\\fakepath\\Captura desde 2025-01-20 06-56-48.png",
-      "fechaInicio": "2025-01-24",
-      "fechaFinal": "2025-01-25"
-    }
-  ],
-  "tareasCompletadas": [
-    {
-      "id": 1,
-      "titulo": "c",
-      "descripcion": "wregr",
-      "img": "",
-      "fechaInicio": "2025-01-25",
-      "fechaFinal": "2025-01-25"
-    }
-  ]
+  "tareasPendientes": [],
+  "tareasProgreso": [],
+  "tareasCompletadas": []
 }

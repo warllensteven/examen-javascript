@@ -28,7 +28,7 @@ header{
     height: 15vh;
     font-size: large;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
 }
 
@@ -145,6 +145,79 @@ form{
     justify-content: center;
 }
 
+.btnInicio{
+    background-color: rgb(11, 25, 219);
+    width: 90%;
+    color: white;
+    padding: 2%;
+    margin-top: 5%;
+}
+
+
+#divFormIniciar{
+    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 80%;
+    height: 40%;
+    border-radius: 8px;
+    padding: 6%;
+    margin-bottom: 10%;
+}
+
+
+#formIniciar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 80%;
+    border-radius: 8px;
+    margin-left: 9%;
+}
+
+.btnIniciar{
+    background-color: rgb(131, 238, 82);
+    width: 90%;
+    color: rgb(255, 255, 255);
+    padding: 2%;
+    margin-top: 5%;
+}
+
+
+#divFormRegistrar{
+    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 80%;
+    height: 40%;
+    border-radius: 8px;
+    padding: 6%;
+    margin-bottom: 10%;
+}
+
+
+#formRegistrar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 80%;
+    border-radius: 8px;
+    margin-left: 9%;
+}
+
+.btnRegistrar{
+    background-color: rgb(131, 238, 82);
+    width: 90%;
+    color: rgb(255, 255, 255);
+    padding: 2%;
+    margin-top: 5%;
+}
 @media (max-width: 768px) {
     .contenedor{
         display: flex;

@@ -6,6 +6,10 @@ const formP = document.getElementById("formPendiente");
 const formPr = document.getElementById("formProgreso");
 const formC = document.getElementById("formCompletada");
 
+const formI = document.getElementById("formIniciar");
+const formR = document.getElementById("formRegistrar");
+
+
 formP.addEventListener("submit", e =>{
     e.preventDefault();
     const titulo = document.getElementById("tituloP").value;
@@ -147,3 +151,63 @@ const dibujarCompletada = (elemHtml)=>{
 
 dibujarCompletada(tCompletada);
 
+formI.addEventListener("submit", e =>{
+    e.preventDefault();
+    const usuarioI = document.getElementById("usuarioI").value;
+    const contraseña = document.getElementById("contraseñaI").value;
+
+
+    fetch("http://localhost:3000/usuarios")
+    .then(response => response.json())
+    .then(data => data.forEach(usuarioS => {
+        if(usuarioS.usuario == usuarioI && usuarioS.contraseña == contraseña){
+            sessionStorage.setItem("usuario", usuarioI);
+            location.reload();
+            return alert("Bienvenido");
+        }
+    }
+    ))
+})
+
+const invalida = () =>{
+    if(sessionStorage.getItem("usuario")){
+        console.log("Usuario no Registrado")
+    }
+
+    
+}
+
+
+formR.addEventListener("submit", e =>{
+    e.preventDefault();
+    const usuarioR = document.getElementById("usuarioR").value;
+    const contraseña = document.getElementById("contraseñaR").value;
+
+    let usuario = {
+        "usuario": usuarioR,
+        "contraseña": contraseña,
+        "pendientes": [],
+        "progreso": [],
+        "completadas": []
+    }
+
+    fetch("http://localhost:3000/usuarios",{
+        method: "POST",
+        body: JSON.stringify(usuario),
+        headers: {"Content-Type": "application/json"}
+    }).then(response => response.json()).then(data => console.log(data))
+
+
+})
+
+const limpiar = ()=>{
+    if(sessionStorage.getItem("usuario")){
+        console.log("tiene usuario")
+    }
+
+    console.log(sessionStorage.getItem("usuario"))
+};
+
+limpiar();
+
+console.log("hola")
